@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Day</title>
+    <link rel="stylesheet" href="src/css/index.css">
+</head>
+<body>
+    <img src="src/assets/brand.svg" alt="Logo do site" id="brand">
+    <main>
+        <section id="scheduling">
+            <header>
+                <h1>Agende um atendimento</h1>
+                <p>Selecione data, horário e informe o nome do cliente para criar o agendamento</p>
+            </header>
+            <form action="">
+                <fieldset>
+                    <div class="input-wrapper">
+                        <label for="date">Data</label>
+                        <img src="src/assets/Icon.svg" alt="" class="input-icon">
+                        <input type="date" name="date" class="text-input" id="date">
+                    </div>
+                </fieldset>
+                <fieldset id="time">
+                    <legend>Horários</legend>
+                    
+                    <div class="input-wrapper">
+                        <label for="">Manhã</label>
+                        <div class="radios-time-wrapper">
+                            <div class="radio-time-wrapper">
+                                <input type="radio" name="time" id="">
+                                <span>9:00</span>
+                            </div>
+                            <div class="radio-time-wrapper">
+                                <input type="radio" name="time" id="">
+                                <span>10:00</span>
+                            </div>
+                            <div class="radio-time-wrapper">
+                                <input type="radio" name="time" id="">
+                                <span>11:00</span>
+                            </div>
+                            <div class="radio-time-wrapper">
+                                <input type="radio" name="time" id="">
+                                <span>12:00</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="input-wrapper">
+                        <label for="">Tarde</label>
+                        <div class="radios-time-wrapper">
+                            <div class="radio-time-wrapper">
+                                <input type="radio" name="time" id="">
+                                <span>13:00</span>
+                            </div>
+                            <div class="radio-time-wrapper">
+                                <input type="radio" name="time" id="">
+                                <span>14:00</span>
+                            </div>
+                            <div class="radio-time-wrapper">
+                                <input type="radio" name="time" id="">
+                                <span>15:00</span>
+                            </div>
+                            <div class="radio-time-wrapper">
+                                <input type="radio" name="time" id="">
+                                <span>16:00</span>
+                            </div>
+                            <div class="radio-time-wrapper">
+                                <input type="radio" name="time" id="">
+                                <span>17:00</span>
+                            </div>
+                            <div class="radio-time-wrapper">
+                                <input type="radio" name="time" id="">
+                                <span>18:00</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="input-wrapper">
+                        <label for="">Noite</label>
+                        <div class="radios-time-wrapper">
+                            <div class="radio-time-wrapper">
+                                <input type="radio" name="time" id="">
+                                <span>19:00</span>
+                            </div>
+                            <div class="radio-time-wrapper">
+                                <input type="radio" name="time" id="">
+                                <span>20:00</span>
+                            </div>
+                            <div class="radio-time-wrapper">
+                                <input type="radio" name="time" id="">
+                                <span>21:00</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <div class="input-wrapper">
+                        <label for="name">Cliente</label>
+                        <img src="src/assets/Icon-5.svg" alt="" class="input-icon">
+                        <input type="text" placeholder="Nome do cliente" class="text-input" id="name">
+                    </div>
+                </fieldset>
+                
+                <button type="submit" class="btn">Agendar</button>
+            </form>
+        </section>
+        
+        <section id="schedule">
+            <header>
+                <div>
+                    <h2>Sua agenda</h2>
+                    <p>Consulte os seus cortes de cabelo agendados por dia</p>
+                </div>
+                <div class="input-wrapper">
+                    <img src="src/assets/Icon.svg" alt="" class="input-icon">
+                    <input type="date" name="date" class="text-input" id="date">
+                </div>
+            </header>
+            
+            <section id="morning">
+                <header>
+                    <img src="src/assets/Icon-1.svg" alt="Ícone que representa a manhã">
+                    <h3>Manhã</h3>
+                    <span>09h-12h</span>
+                </header>
+                <ul>
+                    <li><span>11:00</span><span>Ryan Dorwart</span></li>
+                </ul>
+            </section>
+            
+            <section id="afternoon">
+                <header>
+                    <img src="src/assets/Icon-2.svg" alt="Ícone que representa a manhã">
+                    <h3>Tarde</h3>
+                    <span>13h-18h</span>
+                </header>
+                <ul>
+                    <li><span>11:00</span><span>Ryan Dorwart</span></li>
+                    <li><span>11:00</span><span>Ryan Dorwart</span></li>
+                </ul>
+            </section>
+            
+            <section id="night">
+                <header>
+                    <img src="src/assets/Icon-3.svg" alt="Ícone que representa a manhã">
+                    <h3>Noite</h3>
+                    <span>19h-21h</span>
+                </header>
+                <ul>
+                    <li><span>11:00</span><span>Ryan Dorwart</span></li>
+                </ul>
+            </section>
+        </section>
+        
+    </main>
+</body>
+</html>

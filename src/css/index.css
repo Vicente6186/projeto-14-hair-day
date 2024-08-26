@@ -1,0 +1,22 @@
+@import url(global.css);
+@import url(utilities.css);
+@import url(scheduling.css);
+@import url(schedule.css);
+
+main {
+    min-height: 100vh;
+    padding: 1.2rem;
+    display: grid;
+    grid-template-columns: .35fr .65fr;
+    background-color: var(--gray-800);
+}
+
+#brand {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1.2rem 2rem;
+    border-bottom-right-radius: 1.2rem;
+    background-color: var(--gray-600);
+}
+
