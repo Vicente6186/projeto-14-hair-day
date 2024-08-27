@@ -1,5 +1,6 @@
 import { actualDateFormat } from "./date"
-import { readAllSchedules } from "./schedule-crud"
+import { deleteSchedule, readAllSchedules } from "./schedule-crud"
+import { deleteScheduleHtml } from "./schedule-delete"
 
 const morningUl = document.getElementById('morning-ul')
 const afternoonUl = document.getElementById('afternoon-ul')
@@ -19,12 +20,27 @@ async function readSchedules({ date = false }) {
 }
 
 function addScheduleHtml(schedule) {
+    const id = schedule.id
+    console.log('id clicado', id)
     const name = schedule.name
     const hour = new Date(schedule.date).getHours()
-    const newScheduleHtml = `<li><span>${hour}:00</span><span>${name}</span></li>`
-    if(hour < 13) morningUl.innerHTML += newScheduleHtml 
-    else if(hour < 19) afternoonUl.innerHTML += newScheduleHtml 
-    else nightUl.innerHTML += newScheduleHtml 
+    
+    const li = document.createElement('li')
+    const hourSpan = document.createElement('span')
+    hourSpan.textContent = `${hour}:00`
+    const nameSpan = document.createElement('span')
+    nameSpan.textContent = name
+    const deleteSpan = document.createElement('span')
+    deleteSpan.textContent = 'X'
+    deleteSpan.addEventListener('click', event => {
+        deleteScheduleHtml(event, id)
+    })
+
+    li.append(hourSpan, nameSpan, deleteSpan)
+
+    if(hour < 13) morningUl.appendChild(li)
+    else if(hour < 19) afternoonUl.appendChild(li)
+    else nightUl.appendChild(li)
 }
 
 

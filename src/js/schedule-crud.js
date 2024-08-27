@@ -20,4 +20,10 @@ async function readAllSchedules({ date: dateFilter }) {
     return response
 }
 
-export {createSchedule, readAllSchedules}
+async function deleteSchedule({id}){
+    let response = await fetch(`${baseUrl}/schedules/${id}`, { method: 'DELETE', })
+    response = await response.json()
+    return response
+}
+
+export {createSchedule, readAllSchedules, deleteSchedule}

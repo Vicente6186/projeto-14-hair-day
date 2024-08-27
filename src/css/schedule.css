@@ -33,10 +33,18 @@
 
         & li {
             padding-block: .4rem;
+            display: flex;
 
             & :first-child {
                 font: var(--title-md);
                 margin-right: 2rem;
+            }
+
+            & :last-child {
+                color: red;
+                font-weight: bold;
+                margin-left: auto;
+                cursor: pointer;
             }
         }
     }
