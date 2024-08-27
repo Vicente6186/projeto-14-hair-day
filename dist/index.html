@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hair Day</title>
-</head>
+<script defer src="index.bundle.js"></script></head>
 <body>
     <img src="src/assets/brand.svg" alt="Logo do site" id="brand">
     <main>
@@ -18,7 +18,7 @@
                     <div class="input-wrapper">
                         <label for="date">Data</label>
                         <img src="src/assets/Icon.svg" alt="" class="input-icon">
-                        <input type="date" name="date" class="text-input" required min="2024-08-26">
+                        <input type="date" name="date" class="text-input" id="date" required>
                     </div>
                 </fieldset>
                 <fieldset id="time">
@@ -28,19 +28,19 @@
                         <label for="">Manhã</label>
                         <ul class="radios-time-wrapper">
                             <li class="radio-time-wrapper">
-                                <input type="radio" name="time" value="09" required>
+                                <input type="radio" name="time" id="" required>
                                 <span>9:00</span>
                             </li>
                             <li class="radio-time-wrapper">
-                                <input type="radio" name="time" value="10">
+                                <input type="radio" name="time" id="">
                                 <span>10:00</span>
                             </li>
                             <li class="radio-time-wrapper">
-                                <input type="radio" name="time" value="11">
+                                <input type="radio" name="time" id="">
                                 <span>11:00</span>
                             </li>
                             <li class="radio-time-wrapper">
-                                <input type="radio" name="time" value="12">
+                                <input type="radio" name="time" id="">
                                 <span>12:00</span>
                             </li>
                         </ul>
@@ -50,27 +50,27 @@
                         <label for="">Tarde</label>
                         <ul class="radios-time-wrapper">
                             <li class="radio-time-wrapper">
-                                <input type="radio" name="time" value="13">
+                                <input type="radio" name="time" id="">
                                 <span>13:00</span>
                             </li>
                             <li class="radio-time-wrapper">
-                                <input type="radio" name="time" value="14">
+                                <input type="radio" name="time" id="">
                                 <span>14:00</span>
                             </li>
                             <li class="radio-time-wrapper">
-                                <input type="radio" name="time" value="15">
+                                <input type="radio" name="time" id="">
                                 <span>15:00</span>
                             </li>
                             <li class="radio-time-wrapper">
-                                <input type="radio" name="time" value="16">
+                                <input type="radio" name="time" id="">
                                 <span>16:00</span>
                             </li>
                             <li class="radio-time-wrapper">
-                                <input type="radio" name="time" value="17">
+                                <input type="radio" name="time" id="">
                                 <span>17:00</span>
                             </li>
                             <li class="radio-time-wrapper">
-                                <input type="radio" name="time" value="18">
+                                <input type="radio" name="time" id="">
                                 <span>18:00</span>
                             </li>
                         </ul>
@@ -80,15 +80,15 @@
                         <label for="">Noite</label>
                         <ul class="radios-time-wrapper">
                             <li class="radio-time-wrapper">
-                                <input type="radio" name="time" value="19">
+                                <input type="radio" name="time" id="">
                                 <span>19:00</span>
                             </li>
                             <li class="radio-time-wrapper">
-                                <input type="radio" name="time" value="20">
+                                <input type="radio" name="time" id="">
                                 <span>20:00</span>
                             </li>
                             <li class="radio-time-wrapper">
-                                <input type="radio" name="time" value="21">
+                                <input type="radio" name="time" id="">
                                 <span>21:00</span>
                             </li>
                             
@@ -100,7 +100,7 @@
                     <div class="input-wrapper">
                         <label for="name">Cliente</label>
                         <img src="src/assets/Icon-5.svg" alt="" class="input-icon">
-                        <input type="text" placeholder="Nome do cliente" class="text-input" name="name" id="name" required>
+                        <input type="text" placeholder="Nome do cliente" class="text-input" id="name" required>
                     </div>
                 </fieldset>
                 
@@ -126,7 +126,9 @@
                     <h3>Manhã</h3>
                     <span>09h-12h</span>
                 </header>
-                <ul id="morning-ul"></ul>
+                <ul>
+                    <li><span>11:00</span><span>Ryan Dorwart</span></li>
+                </ul>
             </section>
             
             <section id="afternoon">
@@ -135,7 +137,10 @@
                     <h3>Tarde</h3>
                     <span>13h-18h</span>
                 </header>
-                <ul id="afternoon-ul"></ul>
+                <ul>
+                    <li><span>11:00</span><span>Ryan Dorwart</span></li>
+                    <li><span>11:00</span><span>Ryan Dorwart</span></li>
+                </ul>
             </section>
             
             <section id="night">
@@ -144,7 +149,9 @@
                     <h3>Noite</h3>
                     <span>19h-21h</span>
                 </header>
-                <ul id="night-ul"></ul>
+                <ul>
+                    <li><span>11:00</span><span>Ryan Dorwart</span></li>
+                </ul>
             </section>
         </section>
         

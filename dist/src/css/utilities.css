@@ -50,7 +50,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: .8rem;
-    list-style: none;
 }
 
 .radio-time-wrapper {
@@ -66,16 +65,12 @@
         inset: 0;
     }
 
-    &:not(:has(:disabled)):hover {
+    &:hover {
         background-color: var(--gray-500);
     }
 
     &:has(:checked) {
      border-color: var(--yellow);   
-    }
-
-    &:has(:disabled) {
-        opacity: .5;
     }
 }
 

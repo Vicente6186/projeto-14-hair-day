@@ -1,0 +1,26 @@
+#scheduling {
+    background-color: var(--gray-700);
+    padding: 8rem;
+    border-radius: 1.2rem;
+
+    & p {
+        margin-block: 1rem 2.4rem;
+    }
+
+    & form {
+        display: grid;
+        gap: 2.4rem;
+    }
+
+   
+    
+    & #time {
+        .input-wrapper + .input-wrapper{
+            margin-top: 1.2rem;
+        }
+    }
+
+    button {
+        margin-top: 2.4rem;
+    }
+}

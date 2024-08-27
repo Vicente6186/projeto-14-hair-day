@@ -37,7 +37,7 @@ h1, h2, h3, h4 {
     color: var(--gray-100);
 }
 
-
+h1 { font: var(--title-lg); }
 
 input, button { width: 100%; }
 
